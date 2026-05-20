@@ -5,7 +5,7 @@
       
       <div class="timeline">
         <div 
-          v-for="(job, index) in experience" 
+          v-for="job in experience" 
           :key="job.id"
           class="job-card"
           :class="{ 'current': job.isCurrent }"
