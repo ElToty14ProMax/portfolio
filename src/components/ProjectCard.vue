@@ -27,10 +27,10 @@
         
         <div class="card-links">
           <a :href="project.demoLink" target="_blank" class="demo-btn">
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fas fa-external-link-alt"></i> Live
           </a>
           <a :href="project.codeLink" target="_blank" class="code-btn">
-            <i class="fab fa-github"></i> Código
+            <i class="fab fa-github"></i> Source
           </a>
         </div>
       </div>
@@ -69,49 +69,26 @@
   })
   </script>
   
-  <style scoped>
-  .project-card {
+<style scoped>
+.project-card {
     width: 100%;
-    max-width: 360px;
-    background: rgba(30, 41, 59, 0.85);
-    border-radius: 16px;
+    background: #1a1a1a;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
     position: relative;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(74, 85, 104, 0.5);
-    transform: perspective(1000px) rotateX(0) rotateY(0);
-    transform-style: preserve-3d;
-    will-change: transform;
-    margin: 15px;
+    border: 1px solid #2a2a2a;
   }
   
-  .project-card.card-hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(59, 130, 246, 0.5);
-    z-index: 10;
-  }
-  
-  .project-card::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
-    z-index: -1;
-    border-radius: 18px;
-    opacity: 0;
-    transition: opacity 0.4s;
-  }
-  
-  .project-card.card-hover::before {
-    opacity: 1;
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    border-color: #404040;
   }
   
   .card-image {
-    height: 200px;
+    height: 180px;
     overflow: hidden;
     position: relative;
   }
@@ -120,125 +97,111 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s;
+    transition: transform 0.4s ease;
   }
   
-  .project-card.card-hover .card-image img {
-    transform: scale(1.1);
+  .project-card:hover .card-image img {
+    transform: scale(1.05);
   }
   
   .card-content {
-    padding: 25px;
+    padding: 24px;
   }
   
   .card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #e2e8f0;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .card-content h3::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    border-radius: 2px;
-    transition: width 0.3s;
-  }
-  
-  .project-card.card-hover .card-content h3::after {
-    width: 100px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #f5f5f5;
   }
   
   .project-description {
-    color: #a0aec0;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    height: 80px;
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     overflow: hidden;
   }
   
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 8px;
+    margin-bottom: 20px;
   }
   
   .tech-tag {
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    color: #999;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
     font-weight: 500;
-    transition: all 0.3s;
+    background: #252525;
+    border: 1px solid #333;
+    transition: all 0.2s;
   }
   
   .tech-tag:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #333;
+    color: #fff;
   }
   
   .card-links {
     display: flex;
-    gap: 15px;
-    border-top: 1px solid rgba(74, 85, 104, 0.5);
-    padding-top: 20px;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a2a;
   }
   
   .demo-btn, .code-btn {
     flex: 1;
-    padding: 12px 0;
+    padding: 10px 0;
     text-align: center;
-    border-radius: 8px;
-    font-weight: 600;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
   }
   
   .demo-btn {
-    background: linear-gradient(45deg, #3b82f6, #2563eb);
-    color: white;
-    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+    background: #fff;
+    color: #000;
   }
   
   .demo-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
+    background: #e0e0e0;
   }
   
   .code-btn {
-    background: rgba(45, 55, 72, 0.7);
-    color: #a0aec0;
-    border: 1px solid rgba(74, 85, 104, 0.7);
+    background: transparent;
+    color: #888;
+    border: 1px solid #444;
   }
   
   .code-btn:hover {
-    background: rgba(56, 178, 172, 0.2);
-    color: #38b2ac;
-    transform: translateY(-3px);
+    border-color: #666;
+    color: #fff;
   }
   
   .watermark {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
-    opacity: 0.05;
-    font-size: 5rem;
-    font-weight: 800;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.04;
+    font-size: 4rem;
+    font-weight: 700;
     z-index: 0;
     pointer-events: none;
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
+    color: #fff;
   }
-  </style>
+</style>

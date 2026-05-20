@@ -4,13 +4,13 @@
         <!-- Header Section -->
         <div class="section-header">
           <div class="header-content">
-            <span class="section-subtitle">Tecnologías & Herramientas</span>
+            <span class="section-subtitle">Technologies & Tools</span>
             <h2 class="section-title">
-              Mi Stack
-              <span class="highlight-text">Tecnológico</span>
+              My Tech
+              <span class="highlight-text">Stack</span>
             </h2>
             <p class="section-description">
-              Estas son las tecnologías con las que trabajo para crear diversas experiencias digitales
+              These are the technologies I work with to build diverse digital experiences
             </p>
           </div>
           <div class="floating-elements">
@@ -66,7 +66,7 @@
                   
                   <h3 class="skill-name">
                     {{ skill.name }}
-                    <span v-if="skill.upcoming" class="soon-badge">Próximamente</span>
+                    <span v-if="skill.upcoming" class="soon-badge">Coming Soon</span>
                   </h3>
                   <p class="skill-description">{{ skill.description }}</p>
                   
@@ -77,7 +77,7 @@
                     </div>
                     <div class="project-count">
                       <i class="fas fa-project-diagram"></i>
-                      {{ skill.projects }} proyectos
+                      {{ skill.projects }} projects
                     </div>
                   </div>
   
@@ -113,11 +113,12 @@
 
   const activeCategory = ref('all')
   const categories = [
-    { id: 'all', name: 'Todas', emoji: '🌟' },
+    { id: 'all', name: 'All', emoji: '🌟' },
     { id: 'frontend', name: 'Frontend', emoji: '🎨' },
     { id: 'backend', name: 'Backend', emoji: '⚙️' },
-    { id: 'database', name: 'Bases de Datos', emoji: '💾' },
-    { id: 'language', name: 'Lenguajes', emoji: '💻' }
+    { id: 'database', name: 'Databases', emoji: '💾' },
+    { id: 'language', name: 'Languages', emoji: '💻' },
+    { id: 'integrations', name: 'Integrations', emoji: '🔗' }
   ]
 
   const skills = [
@@ -128,10 +129,10 @@
       color: '#4FC08D',
       category: 'frontend',
       level: 5,
-      proficiency: 85,
-      experience: '2+ años',
+      proficiency: 90,
+      experience: '2+ years',
       projects: 6,
-      description: 'Framework progresivo para interfaces de usuario'
+      description: 'Progressive framework for building user interfaces'
     },
     {
       id: 9,
@@ -139,11 +140,11 @@
       icon: 'fab fa-react',
       color: '#61DAFB',
       category: 'frontend',
-      level: 3,
-      proficiency: 70,
-      experience: '1+ año',
+      level: 4,
+      proficiency: 75,
+      experience: '1+ year',
       projects: 3,
-      description: 'Librería para construir interfaces de usuario'
+      description: 'Library for building interactive user interfaces'
     },
     {
       id: 2,
@@ -152,58 +153,58 @@
       color: '#F7DF1E',
       category: 'language',
       level: 5,
-      proficiency: 90,
-      experience: '2+ años',
-      projects: 6,
-      description: 'Lenguaje de programación dinámico y versátil'
+      proficiency: 95,
+      experience: '3+ years',
+      projects: 10,
+      description: 'Versatile programming language for web development'
     },
     {
       id: 3,
+      name: 'TypeScript',
+      icon: 'fab fa-js-square',
+      color: '#3178C6',
+      category: 'language',
+      level: 4,
+      proficiency: 80,
+      experience: '2+ years',
+      projects: 5,
+      description: 'Typed superset of JavaScript for robust applications'
+    },
+    {
+      id: 4,
       name: 'PHP',
       icon: 'fab fa-php',
       color: '#777BB4',
       category: 'language',
       level: 5,
-      proficiency: 80,
-      experience: '2+ años',
+      proficiency: 85,
+      experience: '2+ years',
       projects: 7,
-      description: 'Lenguaje de servidor para desarrollo web'
+      description: 'Server-side scripting language for web development'
     },
     {
-      id: 4,
+      id: 5,
       name: 'Laravel',
       icon: 'fab fa-laravel',
       color: '#FF2D20',
       category: 'backend',
       level: 5,
-      proficiency: 75,
-      experience: '2+ año',
-      projects: 4,
-      description: 'Framework elegante y expresivo para PHP'
+      proficiency: 85,
+      experience: '2+ years',
+      projects: 5,
+      description: 'Elegant and expressive PHP framework'
     },
     {
-      id: 5,
+      id: 6,
       name: 'Python',
       icon: 'fab fa-python',
       color: '#3776AB',
       category: 'language',
       level: 3,
-      proficiency: 70,
-      experience: '1+ año',
-      projects: 1,
-      description: 'Lenguaje simple y poderoso para múltiples usos'
-    },
-    {
-      id: 6,
-      name: 'Java',
-      icon: 'fab fa-java',
-      color: '#ED8B00',
-      category: 'language',
-      level: 4,
       proficiency: 65,
-      experience: '2+ año',
+      experience: '1+ year',
       projects: 2,
-      description: 'Lenguaje robusto para aplicaciones empresariales'
+      description: 'Powerful and simple language for multiple purposes'
     },
     {
       id: 7,
@@ -212,10 +213,10 @@
       color: '#336791',
       category: 'database',
       level: 5,
-      proficiency: 80,
-      experience: '2+ años',
-      projects: 7,
-      description: 'Sistema de base de datos relacional avanzado'
+      proficiency: 90,
+      experience: '3+ years',
+      projects: 8,
+      description: 'Advanced open-source relational database'
     },
     {
       id: 8,
@@ -224,36 +225,94 @@
       color: '#4479A1',
       category: 'database',
       level: 4,
-      proficiency: 85,
-      experience: '1+ años',
-      projects: 1,
-      description: 'Sistema de gestión de bases de datos popular'
+      proficiency: 80,
+      experience: '2+ years',
+      projects: 3,
+      description: 'Popular open-source database management system'
     },
     {
-      id: 10,
-      name: 'Node.js',
-      icon: 'fab fa-node-js',
-      color: '#3C873A',
+      id: 12,
+      name: 'Docker',
+      icon: 'fab fa-docker',
+      color: '#2496ED',
       category: 'backend',
-      level: 2,
-      proficiency: 35,
-      experience: 'Aprendiendo',
-      projects: 0,
-      description: 'Plataforma de ejecución para JavaScript en el servidor',
-      upcoming: true
+      level: 4,
+      proficiency: 75,
+      experience: '1+ year',
+      projects: 4,
+      description: 'Container platform for consistent deployments'
     },
     {
-      id: 11,
-      name: 'Django',
-      icon: 'fas fa-leaf',
-      color: '#092E20',
-      category: 'backend',
-      level: 2,
-      proficiency: 30,
-      experience: 'Aprendiendo',
-      projects: 0,
-      description: 'Framework web de alto nivel para Python',
-      upcoming: true
+      id: 13,
+      name: 'Salesforce',
+      icon: 'fas fa-cloud',
+      color: '#00A1E0',
+      category: 'integrations',
+      level: 4,
+      proficiency: 80,
+      experience: '1+ year',
+      projects: 3,
+      description: 'CRM platform and Flow Builder for automation'
+    },
+    {
+      id: 14,
+      name: 'Zapier',
+      icon: 'fas fa-bolt',
+      color: '#FF4F00',
+      category: 'integrations',
+      level: 5,
+      proficiency: 90,
+      experience: '1+ year',
+      projects: 8,
+      description: 'No-code workflow automation platform'
+    },
+    {
+      id: 15,
+      name: 'Workato',
+      icon: 'fas fa-plug',
+      color: '#5B1F8C',
+      category: 'integrations',
+      level: 4,
+      proficiency: 80,
+      experience: '6+ months',
+      projects: 4,
+      description: 'Enterprise integration platform'
+    },
+    {
+      id: 16,
+      name: 'n8n',
+      icon: 'fas fa-network-wired',
+      color: '#FF4000',
+      category: 'integrations',
+      level: 4,
+      proficiency: 75,
+      experience: '6+ months',
+      projects: 3,
+      description: 'Open-source workflow automation'
+    },
+    {
+      id: 17,
+      name: 'Zoho CRM',
+      icon: 'fas fa-crm',
+      color: '#C81E1E',
+      category: 'integrations',
+      level: 4,
+      proficiency: 80,
+      experience: '1+ year',
+      projects: 4,
+      description: 'Cloud-based CRM platform'
+    },
+    {
+      id: 18,
+      name: 'Monday.com',
+      icon: 'fas fa-columns',
+      color: '#FF3D57',
+      category: 'integrations',
+      level: 4,
+      proficiency: 75,
+      experience: '6+ months',
+      projects: 3,
+      description: 'Work management platform'
     }
   ]
 

@@ -16,35 +16,35 @@
           <div class="intro-content">
             <div class="greeting">
               <span class="greeting-icon">👋</span>
-              <span>¡Hola! Soy</span>
+              <span>Hi! I'm</span>
             </div>
 
             <h1 class="myself-name">
-              <span class="name-part">Ing.</span>
+              <span class="name-part">Eng.</span>
               <span class="name-part">Frank Eduardo</span>
               <span class="name-part highlight">Gattorno Rodríguez</span>
             </h1>
 
             <div class="role-section">
               <p class="role-title">
-                <span class="typing-effect">Desarrollador Full-Stack</span>
+                <span class="typing-effect">Integration Engineer & Full-Stack Developer</span>
                 <span class="cursor">|</span>
               </p>
               <p class="role-description">
-                Creando soluciones web completas con tecnologías modernas.
-                Especializado en desarrollo tanto Front-End como Back-End.
+                Integration Engineer with proven experience in API-led integrations, workflow automation,
+                and system connectivity. Building complete web solutions with modern technologies.
               </p>
             </div>
 
             <div class="myself-actions">
               <button class="btn btn-primary" @click="downloadCV">
                 <i class="fas fa-download"></i>
-                <span>Descargar CV</span>
+                <span>Download CV</span>
                 <div class="btn-ripple"></div>
               </button>
               <button class="btn btn-secondary" @click="scrollToProjects">
                 <i class="fas fa-eye"></i>
-                <span>Ver Proyectos</span>
+                <span>View Projects</span>
               </button>
             </div>
           </div>
@@ -69,10 +69,10 @@ import StatsSection from "./StatsSection.vue"
 const isLoaded = ref(false)
 
 const stats = [
-  { number: 15, label: "Proyectos", icon: "🚀", suffix: "+" },
-  { number: 8, label: "Tecnologías", icon: "💻", suffix: "+" },
-  { number: 3, label: "Años Exp.", icon: "⭐", suffix: "+" },
-  { number: 100, label: "Dedicación", icon: "❤️", suffix: "%" }
+  { number: 15, label: "Projects", icon: "🚀", suffix: "+" },
+  { number: 12, label: "Technologies", icon: "💻", suffix: "+" },
+  { number: 3, label: "Years Exp.", icon: "⭐", suffix: "+" },
+  { number: 100, label: "Dedication", icon: "❤️", suffix: "%" }
 ]
 
 onMounted(() => {

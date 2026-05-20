@@ -10,13 +10,13 @@
       <div class="title-container">
         <div class="graduation-icon">🎓</div>
         <h2 class="section-title">
-          <span class="title-word">Formación</span>
-          <span class="title-word highlight">Académica</span>
+          <span class="title-word">Academic</span>
+          <span class="title-word highlight">Background</span>
         </h2>
         <div class="title-underline"></div>
       </div>
       <p class="section-subtitle">
-        Mi trayectoria educativa y certificaciones profesionales
+        My educational journey and professional certifications
       </p>
     </div>
     
@@ -53,7 +53,7 @@
                   </span>
                   <span v-if="edu.isCurrent" class="current-tag">
                     <span class="pulse-dot"></span>
-                    En Curso
+                    In Progress
                   </span>
                 </div>
               </div>
@@ -108,8 +108,8 @@ const education = [
     id: 1,
     dateRange: '2022-2025',
     institution: "Universidad Central 'Marta Abreu' de Las Villas",
-    program: 'Ingeniería Informática',
-    achievement: 'Graduado',
+    program: 'Computer Engineering',
+    achievement: 'Graduated',
     location: 'Villa Clara, Cuba',
     isCurrent: false
   },
@@ -117,8 +117,8 @@ const education = [
     id: 2,
     dateRange: '2025',
     institution: "Centro de idiomas de la Universidad Central 'Marta Abreu' de Las Villas",
-    program: 'Certificación en Idioma Inglés',
-    achievement: 'Nivel B1',
+    program: 'English Language Certification',
+    achievement: 'Level B1',
     location: 'Villa Clara, Cuba',
     isCurrent: false
   },
@@ -126,8 +126,8 @@ const education = [
     id: 3,
     dateRange: '2017 - 2020',
     institution: "Instituto Preuniversitario 'Mariano Clemente Prado'",
-    program: 'Bachiller',
-    achievement: 'Graduado',
+    program: 'High School Diploma',
+    achievement: 'Graduated',
     location: 'Villa Clara, Cuba',
     isCurrent: false
   }

@@ -3,21 +3,21 @@
     <div class="container">
       <div class="columns">
         <div class="col">
-          <h4>Acerca de mí</h4>
+          <h4>About Me</h4>
           <ul>
-            <li><router-link :to="{ name: 'home', hash: '#myself' }">¿Quién soy?</router-link></li>
-            <li><router-link :to="{ name: 'home', hash: '#skills' }">Tecnologías</router-link></li>
-            <li><router-link :to="{ name: 'home', hash: '#projects' }">Proyectos</router-link></li>
-            <li><router-link :to="{ name: 'home', hash: '#education' }">Formación</router-link></li>
-            <li><a :href="cvUrl" target="_blank" rel="noopener">Descargar CV</a></li>
+            <li><router-link :to="{ name: 'home', hash: '#myself' }">Who am I?</router-link></li>
+            <li><router-link :to="{ name: 'home', hash: '#skills' }">Technologies</router-link></li>
+            <li><router-link :to="{ name: 'home', hash: '#projects' }">Projects</router-link></li>
+            <li><router-link :to="{ name: 'home', hash: '#education' }">Education</router-link></li>
+            <li><a :href="cvUrl" target="_blank" rel="noopener">Download CV</a></li>
           </ul>
         </div>
 
         <div class="col">
-          <h4>Conecta conmigo</h4>
+          <h4>Connect</h4>
           <ul>
-            <li><a href="mailto:frankegr14@gmail.com">Soporte / Email</a></li>
-            <li><a href="tel:+5354567158">Teléfono</a></li>
+            <li><a href="mailto:frankegr14@gmail.com">Email</a></li>
+            <li><a href="tel:+5511913463247">Phone</a></li>
             <li><a href="https://github.com/ElToty14ProMax" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/frank-eduardo-gattorno-rodr%C3%ADguez-b30bb5375/" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://x.com/GattornoFrank" target="_blank" rel="noopener">X (Twitter)</a></li>
@@ -25,21 +25,21 @@
         </div>
 
         <div class="col">
-          <h4>Servicios</h4>
+          <h4>Services</h4>
           <ul>
-            <li><router-link :to="{ name: 'home', hash: '#projects' }">Desarrollo Web</router-link></li>
-            <li><router-link :to="{ name: 'home', hash: '#projects' }">APIs y Backend</router-link></li>
+            <li><router-link :to="{ name: 'home', hash: '#projects' }">Web Development</router-link></li>
+            <li><router-link :to="{ name: 'home', hash: '#projects' }">APIs & Backend</router-link></li>
             <li><router-link :to="{ name: 'home', hash: '#projects' }">Dashboards</router-link></li>
-            <li><router-link :to="{ name: 'home', hash: '#skills' }">Integraciones</router-link></li>
+            <li><router-link :to="{ name: 'home', hash: '#skills' }">Integrations</router-link></li>
           </ul>
         </div>
 
         <div class="col">
-          <h4>Recursos</h4>
+          <h4>Resources</h4>
           <ul>
-            <li><a href="https://github.com/ElToty14ProMax?tab=repositories" target="_blank" rel="noopener">Repos públicos</a></li>
-            <li><a href="https://drive.google.com/file/d/1IhX6uTravr5-7awPdSJJLEY53vzJ3aG_/view" target="_blank" rel="noopener">Certificados / CV</a></li>
-            <li><a href="mailto:frankegr14@gmail.com">Consultas</a></li>
+            <li><a href="https://github.com/ElToty14ProMax?tab=repositories" target="_blank" rel="noopener">Public Repos</a></li>
+            <li><a href="https://drive.google.com/file/d/1IhX6uTravr5-7awPdSJJLEY53vzJ3aG_/view" target="_blank" rel="noopener">Certificates / CV</a></li>
+            <li><a href="mailto:frankegr14@gmail.com">Inquiries</a></li>
           </ul>
         </div>
       </div>
@@ -47,7 +47,7 @@
       <div class="divider"></div>
 
       <div class="bottom-bar">
-        <div class="location">Santa Clara · Villa Clara · Cuba</div>
+        <div class="location">Embu das Artes · São Paulo · Brazil</div>
         <div class="social">
           <a class="social-btn" href="https://github.com/ElToty14ProMax" target="_blank" aria-label="GitHub" rel="noopener">
             <i class="fab fa-github"></i>

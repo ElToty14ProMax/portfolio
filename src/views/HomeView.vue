@@ -2,6 +2,7 @@
   <div class="home-view">
     <MyselfSection />
     <SkillsSection />
+    <ExperienceSection />
     <ProjectsSection />
     <EducationSection />
     <ContactSection />
@@ -11,6 +12,7 @@
 <script setup>
 import MyselfSection from '@/components/sections/MyselfSection.vue'
 import SkillsSection from '@/components/sections/SkillsSection.vue'
+import ExperienceSection from '@/components/sections/ExperienceSection.vue'
 import ProjectsSection from '@/components/sections/ProjectsSection.vue'
 import EducationSection from '@/components/sections/EducationSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
