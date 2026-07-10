@@ -1,24 +1,40 @@
-# crud-front
+# Frank Gattorno Portfolio
+
+Personal portfolio for Frank Eduardo Gattorno Rodríguez, built with Vue 3, TypeScript and Vite.
+
+## Stack
+
+- Vue 3 with `<script setup lang="ts">`
+- TypeScript strict mode
+- Vite production build
+- Vue Router
+- Tree-shakeable Lucide icons
+- Custom CSS system with responsive layouts, sticky case-study panels and reduced-motion support
 
 ## Project setup
-```
+
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Development
+
+```bash
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
+## Production build
+
+```bash
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
+## Preview production output
+
+```bash
+npm run preview
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Notes
+
+The content is centralized in `src/data/portfolio.ts` so experience, projects, links and skills can be updated without hunting through UI components.
