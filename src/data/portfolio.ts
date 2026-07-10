@@ -58,6 +58,16 @@ export interface EducationItem {
   detail: string
 }
 
+export interface Certification {
+  title: string
+  issuer: string
+  year: string
+  category: string
+  detail: string
+  accent: 'sun' | 'coral' | 'aqua' | 'green' | 'violet'
+  credentialHref?: string
+}
+
 export const profile = {
   name: 'Frank Eduardo Gattorno Rodríguez',
   shortName: 'Frank Gattorno',
@@ -81,13 +91,14 @@ export const navItems: NavItem[] = [
   { label: 'Work', href: '#work' },
   { label: 'Projects', href: '#projects' },
   { label: 'Proof', href: '#proof' },
+  { label: 'Certs', href: '#certifications' },
   { label: 'Contact', href: '#contact' }
 ]
 
 export const heroStats: Stat[] = [
   { value: '5+', label: 'years building software and integrations' },
   { value: '20+', label: 'business tools connected through APIs and workflows' },
-  { value: '4', label: 'major platforms documented from architecture to deployment' },
+  { value: '10', label: 'certificates across code, automation and English validation' },
   { value: '2025', label: 'Computer Engineering degree completed at UCLV' }
 ]
 
@@ -344,12 +355,93 @@ export const education: EducationItem[] = [
     institution: 'Universidad Central "Marta Abreu" de Las Villas',
     period: '2022 - 2025',
     detail: 'Graduated with a thesis focused on a Laravel, Vue and PostgreSQL public registry management system.'
+  }
+]
+
+export const certifications: Certification[] = [
+  {
+    title: 'Workato Foundations Level 2',
+    issuer: 'Workato',
+    year: '2026',
+    category: 'Enterprise automation',
+    detail: 'Credential focused on automation foundations, recipes, connectors and workflow logic.',
+    accent: 'aqua',
+    credentialHref:
+      'https://credentials.workato.com/513429de-2ea7-47a4-aab6-d2616c3b100d#acc.I5Nk02eO'
+  },
+  {
+    title: 'Enterprise Automation with Workato',
+    issuer: 'Workato',
+    year: '2026',
+    category: 'Enterprise automation',
+    detail: 'Covers enterprise-grade workflow orchestration and connected business operations.',
+    accent: 'violet',
+    credentialHref:
+      'https://credentials.workato.com/82d6ffca-9642-43d6-bbde-959e5580b3bf#acc.AWqfCLX6'
+  },
+  {
+    title: 'Official EF SET English Certificate - C1 Advanced',
+    issuer: 'EF SET',
+    year: '2026',
+    category: 'Language',
+    detail: 'Score 67/100, CEFR Level C1 Advanced.',
+    accent: 'green'
   },
   {
     title: 'English Language Certification',
-    institution: 'Language Center, UCLV',
-    period: '2025',
-    detail: 'B1 level certification.'
+    issuer: 'Language Center, UCLV',
+    year: '2025',
+    category: 'Language',
+    detail: 'B1 level certification from the UCLV Language Center.',
+    accent: 'sun'
+  },
+  {
+    title: 'JavaScript Algorithms and Data Structures',
+    issuer: 'freeCodeCamp',
+    year: '2025',
+    category: 'Programming',
+    detail: 'Algorithmic thinking, JavaScript fundamentals, data structures and problem solving.',
+    accent: 'coral'
+  },
+  {
+    title: 'Responsive Web Design',
+    issuer: 'freeCodeCamp',
+    year: '2025',
+    category: 'Frontend',
+    detail: 'Responsive layouts, semantic HTML, CSS architecture and accessible page structure.',
+    accent: 'aqua'
+  },
+  {
+    title: 'Frontend Development Libraries V8',
+    issuer: 'freeCodeCamp',
+    year: '2025',
+    category: 'Frontend',
+    detail: 'Frontend library workflow, UI state, component thinking and modern client interfaces.',
+    accent: 'violet'
+  },
+  {
+    title: 'Python',
+    issuer: 'freeCodeCamp',
+    year: '2025',
+    category: 'Programming',
+    detail: 'Python fundamentals for scripting, backend logic and practical automation tasks.',
+    accent: 'green'
+  },
+  {
+    title: 'JavaScript',
+    issuer: 'freeCodeCamp',
+    year: '2025',
+    category: 'Programming',
+    detail: 'Core JavaScript syntax, browser logic and practical programming foundations.',
+    accent: 'sun'
+  },
+  {
+    title: 'B1 English for Developers',
+    issuer: 'freeCodeCamp',
+    year: '2025',
+    category: 'Language',
+    detail: 'Developer-focused English practice for technical communication and collaboration.',
+    accent: 'coral'
   }
 ]
 
@@ -368,7 +460,7 @@ export const techClouds = [
   },
   {
     label: 'Automation',
-    items: ['Zoho One', 'Monday.com', 'Zapier', 'Make', 'n8n', 'Workato', 'Webhooks']
+    items: ['Zoho One', 'Monday.com', 'Zapier', 'Make', 'n8n', 'Workato', 'AI Agents', 'Webhooks']
   },
   {
     label: 'Delivery',

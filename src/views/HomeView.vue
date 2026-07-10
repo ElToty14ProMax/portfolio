@@ -6,6 +6,7 @@
     <ExperienceSection />
     <ProjectShowcase />
     <ProofSection />
+    <CertificationSection />
     <ContactSection />
   </div>
 </template>
@@ -13,6 +14,7 @@
 <script setup lang="ts">
 import { nextTick, onMounted, onUnmounted } from 'vue'
 
+import CertificationSection from '@/components/CertificationSection.vue'
 import CapabilitySection from '@/components/CapabilitySection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'

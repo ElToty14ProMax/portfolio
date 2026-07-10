@@ -1,6 +1,31 @@
 <template>
   <section id="profile" class="hero-section section-anchor" aria-labelledby="hero-title">
-    <img class="hero-media" :src="profile.image" :alt="`${profile.shortName} at UCLV graduation`" fetchpriority="high" />
+    <div class="hero-media" aria-hidden="true">
+      <div class="hero-gradient-field"></div>
+      <div class="hero-circuit-grid"></div>
+      <div class="hero-tech-scene">
+        <div class="hero-code-card hero-code-card-primary">
+          <span>automation.pipeline.ts</span>
+          <code>lead.crm.sync()</code>
+          <code>webhook.map(payload)</code>
+          <code>ai.agent.route(task)</code>
+        </div>
+
+        <div class="hero-code-card hero-code-card-secondary">
+          <span>sales_ops.json</span>
+          <code>Zoho -> Monday -> Slack</code>
+          <code>HubSpot -> Sheets -> QA</code>
+        </div>
+
+        <div class="hero-node-map">
+          <span>CRM</span>
+          <span>API</span>
+          <span>AI</span>
+          <span>DATA</span>
+          <span>OPS</span>
+        </div>
+      </div>
+    </div>
     <div class="hero-scrim" aria-hidden="true"></div>
     <div class="hero-grain" aria-hidden="true"></div>
 
@@ -13,8 +38,8 @@
       <h1 id="hero-title" data-reveal>{{ profile.shortName }}</h1>
 
       <p class="hero-kicker" data-reveal>
-        I build production-ready web apps, APIs and automation systems for teams that need speed,
-        clarity and reliable integrations.
+        I build production-ready web apps, APIs, CRM automations and AI-assisted workflows for
+        teams that need speed, clarity and reliable integrations.
       </p>
 
       <div class="hero-actions" data-reveal>
